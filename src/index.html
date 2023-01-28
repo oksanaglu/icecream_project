@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icecream</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/mobile-menu.html"></include>
+
+    <!-- Modal windows -->
+    <include src="./partials/modal_buy-now.html"></include>
+
+    <main>
+      <!-- Hero -->
+      <include src="./partials/hero.html"></include>
+
+      <!-- Products -->
+      <include src="./partials/products.html"></include>
+
+      <!-- About -->
+      <include src="./partials/about.html"></include>
+
+      <!-- Advantages -->
+      <include src="./partials/advantages.html"></include>
+
+      <!-- Gallery -->
+      <include src="./partials/gallery.html"></include>
+
+      <!-- Customer Reviews -->
+      <include src="./partials/customer-reviews.html"></include>
+
+      <!-- Contacts -->
+      <include src="./partials/franchise.html"></include>
+      <include src="./partials/contacts.html"></include>
+
+      <!-- Franchise modal -->
+    </main>
+
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
+
+    <!-- Button UP -->
+    <include src="./partials/button-up.html"></include>
+
+    <!-- Scripts -->
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="./js/slider.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal_buy-now.js"></script>
+    <script src="./js/modal_buy-now_mobile.js"></script>
+    <script src="./js/franchise.js"></script>
+    <script src="./js/button-up.js"></script>
+  </body>
+</html>

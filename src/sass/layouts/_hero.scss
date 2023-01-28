@@ -1,0 +1,429 @@
+.title {
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-color: #ffb8ca;
+}
+
+.hero__container {
+  position: relative;
+  height: 440px;
+  overflow: visible;
+
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 369px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 590px;
+  }
+}
+
+.hero__mine {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    z-index: 4;
+  }
+}
+
+.hero__title {
+  text-transform: uppercase;
+  padding-top: 136px;
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+
+  font-size: 26px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+
+  color: var(--white-text-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    font-size: 22px;
+    line-height: 1, 14;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    font-size: 38px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+.hero__title--secondary {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 96.5%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--main-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 90.5%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 90.5%;
+  }
+}
+
+.hero__list {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.hero__link {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 62px;
+  height: 24px;
+  border-radius: 22px;
+
+  color: var(--white-text-color);
+  background-color: var(--main-color);
+  cursor: pointer;
+
+  transition: color var(--anim-slow), background-color var(--anim-slow);
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 1.29;
+    width: 107px;
+    height: 40px;
+  }
+}
+
+.hero__link:hover,
+.hero__link:focus {
+  color: var(--main-color);
+  background-color: var(--white-text-color);
+}
+
+.hero__link--secondary {
+  color: var(--main-color);
+  background-color: var(--white-text-color);
+  width: 82px;
+  height: 24px;
+
+  transition: color var(--anim-slow), background-color var(--anim-slow);
+
+  @media screen and (min-width: 1200px) {
+    width: 138px;
+    height: 40px;
+  }
+}
+
+.hero__link--secondary:hover,
+.hero__link--secondary:focus {
+  color: var(--main-color);
+  background-color: var(--button-hover-bgc);
+}
+
+.hero__link:not(:last-child) {
+  margin-right: 12px;
+}
+
+.hero-images {
+  display: flex;
+}
+
+.uppertitle-block {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero-uppertitle {
+  position: relative;
+  margin-top: 41px;
+  margin-bottom: 7px;
+  width: 114px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+
+  z-index: 2;
+  color: var(--white-text-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 68px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 78px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
+
+.hero-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.benefits {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero-benefits__amount {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: var(--main-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+  }
+}
+
+.hero-benefits__item {
+  margin-top: 15px;
+}
+
+.hero-benefits__descr {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-align: right;
+  padding-right: 5px;
+  color: var(--white-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.hero-benefits__descr--first {
+  padding-right: 10px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-align: right;
+
+  color: var(--white-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.29;
+    padding-right: 20px;
+  }
+}
+
+.hero-images__second {
+  position: absolute;
+  bottom: 0;
+
+  right: 32px;
+  z-index: 3;
+
+  top: 34px;
+  width: 171px;
+
+  @media screen and (min-width: 768px) {
+    z-index: 2;
+    width: 143px;
+    right: 303px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    z-index: 2;
+    width: 236px;
+    right: 344px;
+  }
+}
+
+.hero-images__third {
+  position: absolute;
+  right: 32px;
+  bottom: 0;
+  z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    bottom-top: 189px;
+    width: 190px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 304px;
+  }
+}
+
+.benefits {
+  position: absolute;
+  top: 16px;
+  right: 32px;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    right: 32px;
+    top: 64px;
+  }
+}
+
+.hero-images__group::after {
+  position: absolute;
+  content: '';
+
+  left: 36px;
+  bottom: 75px;
+
+  width: 346px;
+  height: 344px;
+
+  border-radius: 50%;
+
+  @media screen and (max-width: 767px) {
+    top: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-color: var(--sec-color);
+    top: -35px;
+    left: 240px;
+    width: 355px;
+    height: 353px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-color: var(--sec-color);
+
+    left: 517px;
+    bottom: 76px;
+    width: 534px;
+    height: 534px;
+  }
+}
+
+.hero-benefits__item--first {
+  position: relative;
+  margin-bottom: 17px;
+  height: 44px;
+  z-index: 2;
+
+  @media screen and (min-width: 1200px) {
+    height: 77px;
+  }
+}
+
+.hero-benefits__item--first::after {
+  position: absolute;
+  content: '';
+
+  right: 2px;
+  bottom: 30px;
+  z-index: -1;
+
+  background-color: var(--white-text-color);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  @media screen and (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+    right: 5px;
+    bottom: 55px;
+  }
+}
+
+.hero-benefits__item--second {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+
+  width: 51px;
+  height: 43px;
+
+  @media screen and (min-width: 1200px) {
+    width: 92px;
+    height: 76px;
+  }
+}
+
+.hero-benefits__item--second::after {
+  position: absolute;
+  content: '';
+  right: 2px;
+  top: -2px;
+  background-color: var(--white-text-color);
+  border-radius: 50%;
+  z-index: -1;
+  width: 16px;
+  height: 16px;
+
+  @media screen and (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+    right: 2px;
+    top: -4px;
+  }
+}
+
+.hero-benefits__amount {
+  text-align: center;
+}
+
+.mobail-circle {
+  @media screen and (max-width: 767px) {
+    background-color: var(--sec-color);
+    margin-left: 14px;
+    margin-top: 25px;
+    width: 346px;
+    height: 344px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+}

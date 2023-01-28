@@ -1,0 +1,200 @@
+.footer {
+    background-color: var(--sec-bgc);
+
+    &__title {
+        
+    @media screen and (min-width: 320px) {
+        width: 234px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 340px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 474px;
+    }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+
+    //     @media screen and (max-width: 767px) {
+    //             margin-bottom: 40px;
+    // }
+}
+}
+
+.container__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+    
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+    @media screen and (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+        }
+
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 60px;
+        }
+}
+
+.first-title {
+    color: var(--sec-color);
+    font-family: 'Titan One', cursive;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 320px) {
+        font-size: 18px;
+        line-height: 1.17;
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+        margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.13;
+        margin-bottom: 16px;
+    }    
+}
+
+.sec-title {
+    color: var(--main-color);
+    font-family: 'Titan One', cursive;
+    font-weight: 400;
+    
+    text-transform: uppercase;
+
+@media screen and (min-width: 320px) {
+        font-size: 34px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.15;
+        letter-spacing: 0.06em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 1.14;
+        letter-spacing: 0.05em;
+    }
+}
+
+.socials {
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 40px;
+
+    gap: 30px;
+
+    &__icon {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
+    
+            @media screen and (min-width: 768px) {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        // background-color: var(--white-text-color);
+        color: var(--sec-color);
+        border-radius: 50%;
+
+        transition: color var(--anim-slow), background-color var(--anim-slow);
+
+        @media screen and (min-width: 768px) {
+                width: 34px;
+                height: 34px;
+            }
+
+        &:hover, &:focus {
+            background-color: var(--white-text-color);
+            color: var(--main-color);
+        }
+    }
+}
+
+.link__tel {
+    // display: block;
+    color: var(--black-text-color);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.83;
+    
+    @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+
+    @media screen and (min-width: 1200px) {
+            font-size: 16px;
+        }    
+}
+.digits {
+    color: var(--main-color);
+}
+
+.copyright {
+    // position: static;
+    height: 60px;
+    max-width: 1199px;
+    border-top: 1px solid #E1E1E1;
+
+    @media screen and (min-width: 768px) {
+            height: 37px;
+        }
+
+    @media screen and (min-width: 1200px) {
+            max-width: 1168px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+    &__title {
+        display: block;
+        width: 151px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 16px;
+        color: #907E82;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        
+        @media screen and (min-width: 768px) {
+                width: 278px;
+                margin-top: 7px;
+                line-height: 1.85;
+            }
+    }
+    
+}
