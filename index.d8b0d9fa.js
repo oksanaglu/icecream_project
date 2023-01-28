@@ -1,0 +1,2 @@
+!function(){"use strict";var t=document.querySelector(".button-up");window.addEventListener("scroll",(function(){var e=window.pageYOffset,n=document.documentElement.clientHeight;e>n&&t.classList.add("button-up-show"),e<n&&t.classList.remove("button-up-show")})),t.addEventListener("click",(function t(){window.pageYOffset>0&&(window.scrollBy(0,-40),setTimeout(t,0))}))}();
+//# sourceMappingURL=index.d8b0d9fa.js.map
